@@ -58,7 +58,7 @@ const Model = ({ pageRef }) => {
             tl.to(modelRef.current.position, {y: 0.3}, section)
 
         }
-    }, [])
+    }, [pageRef])
 
   return (
     <primitive 
