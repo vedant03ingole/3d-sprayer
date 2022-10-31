@@ -10,13 +10,11 @@ export default function Home() {
   const pageRef = useRef(null)
   return (
     <div className={styles.container}>
-      {/* <canvas className={styles.main}> Hello</canvas> */}
       <Canvas id="canvas">
         <PerspectiveCamera makeDefault fov={65} position={[0, 0, 0.5]} />
         <ambientLight args={['white', 0.4]} />
         <pointLight position={[5, 5, 10]} />
         <Sprayer pageRef={pageRef} />
-        {/* <OrbitControls /> */}
       </Canvas>
 
       <div ref={pageRef}>
