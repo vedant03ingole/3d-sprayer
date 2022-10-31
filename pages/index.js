@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei'
 
-import Model from '../components/Model'
+import { Sprayer } from '../components/Sprayer'
 
 export default function Home() {
 
@@ -15,7 +15,7 @@ export default function Home() {
         <PerspectiveCamera makeDefault fov={65} position={[0, 0, 0.5]} />
         <ambientLight args={['white', 0.4]} />
         <pointLight position={[5, 5, 10]} />
-        <Model pageRef={pageRef} />
+        <Sprayer pageRef={pageRef} />
         {/* <OrbitControls /> */}
       </Canvas>
 
