@@ -4,6 +4,7 @@ import { Canvas } from '@react-three/fiber'
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei'
 
 import { Sprayer } from '../components/Sprayer'
+import Hero from '../components/Hero'
 
 export default function Home() {
 
@@ -18,10 +19,7 @@ export default function Home() {
       </Canvas>
 
       <div ref={pageRef}>
-        <section className='hero-section'>
-          <h1> Sprayer buid with latest technology to maximise efficiency</h1>
-          <p> absolute to section B2 so the model will stick in section B2 after scrolling </p>
-        </section>
+        <Hero />
         <section> section 1</section>
         <section> section 2</section>
         <section> section 3</section>
