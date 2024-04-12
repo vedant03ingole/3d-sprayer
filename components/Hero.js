@@ -7,24 +7,26 @@ const Hero = () => {
     const headerText = useRef(null)
     
     useEffect(() => {
-        console.log(headerText.current)
+        // console.log(headerText.current)
         
-        const text = new SplitType(headerText.current, { types: 'words, chars'})
-        // console.log(text.chars);
+        const text = new SplitType(headerText.current,  { types: 'words, chars' })
+        console.log(text.lines);
+
         gsap.to(text.chars, {
             y: 0,
             stagger: 0.05,
             delay: 0.2,
             duration: 0.1
         })
-    }, [])
+    }, [headerText])
     
 
     return (
         <>
-            <section className='hero-section'>
+            <section className='hero-section' >
                 <h1 ref={headerText}> Sprayer buid with latest technology to maximise efficiency</h1>
-                <p> absolute to section B2 so the model will stick in section B2 after scrolling </p>
+                {/* <h1></h1> */}
+                {/* <p> absolute to section B2 so the model will stick in section B2 after scrolling </p> */}
             </section>
         </>
     )

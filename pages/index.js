@@ -5,6 +5,7 @@ import { OrbitControls, PerspectiveCamera } from '@react-three/drei'
 
 import { Sprayer } from '../components/Sprayer'
 import Hero from '../components/Hero'
+import Information from '../components/Information'
 
 export default function Home() {
 
@@ -24,7 +25,7 @@ export default function Home() {
         <section> section 2</section>
         <section> section 3</section>
         <section> section 4</section>
-        <section> section 5</section>
+        <section> <Information /> </section>
         <section> section 6</section>
       </div>
     </div>
